@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aryan Singh · Portfolio</title>
+  <meta name="description" content="Portfolio of Aryan Singh — projects, skills, and contact." />
+  <link rel="icon" href="assets/images/profile.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Homepage">Aryan Singh</a>
+
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="krayusharyan9898@gmail.com" class="btn">📩 Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="section hero">
+      <div class="container">
+        <h1 class="headline">Hi, I'm Aryan — I build clean, responsive web experiences.</h1>
+        <p class="subtext">
+          HTML5 • CSS3 • JavaScript (ES6) • Git • GitHub Pages
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn btn-secondary" href="#contact">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-lead">A selection of things I've built recently.</p>
+
+        <div id="project-grid" class="grid">
+          <!-- Cards injected by script.js from data below -->
+        </div>
+
+        <!-- Example project data (edit or add your own) -->
+        <script>
+          window.PROJECTS = [
+            {
+              title: "Responsive Portfolio",
+              description: "Mobile-first site using semantic HTML, custom CSS, and vanilla JS.",
+              image: "assets/images/project1.png",
+              tags: ["HTML", "CSS", "JavaScript"],
+              live: "https://github.com/aryansingh026/DevFolio",
+              source: "https://github.com/aryansingh026/DevFolio"
+            },
+            {
+              title: "Wheather Cast",
+              description: "A general wheather forcast website.",
+              image: "assets/images/wheather.jpg",
+              tags: ["JavaScript"],
+              live: "#",
+              source: "#"
+            }
+          ];
+        </script>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-img-wrap">
+          <img src="assets/images/profile.jpg" width="320" height="320" alt="Aryan Singh portrait" loading="lazy" />
+        </div>
+        <div class="about-copy">
+          <h2>About</h2>
+          <p>
+            I'm a developer who enjoys turning ideas into fast, accessible, and delightful web
+            experiences. I care about clean semantics, performance, and inclusive design.
+          </p>
+          <ul class="skills">
+            <li>Semantic HTML5</li>
+            <li>Modern CSS</li>
+            <li>JavaScript (ES6)</li>
+            <li>Git & GitHub</li>
+            <li>Accessibility (a11y)</li>
+            <li>Performance</li>
+            <li>Java</li>
+            <li>Problem Solving</li>
+            <li>MySql</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to collaborate or just say hi? Reach out below.</p>
+        <form class="contact-form" name="contact" netlify>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>© <span id="year"></span> Aryan Singh. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
